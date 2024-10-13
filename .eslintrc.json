@@ -1,0 +1,10 @@
+{
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "plugins": ["import"],
+  "rules": {
+    "import/order": ["error", {
+      "groups": ["builtin", "external", "internal"],
+      "alphabetize": { "order": "asc" }
+    }]
+  }
+}

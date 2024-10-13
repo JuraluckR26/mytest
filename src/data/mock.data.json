@@ -1,0 +1,254 @@
+{
+  "controls": [
+    {
+      "rectX": 240,
+      "rectY": 0,
+      "rectWidth": 200,
+      "rectHeight": 110,  
+      "fontSize": 16,
+      "textColor": "white",
+      "bgColor": "rgba(0, 0, 0, 0.4)",
+      "values": [
+        { "label": "HUG Control", "data": "20 °C", "dataColor": "white" },
+        { "label": "HUG Drive Status", "data": "OFF", "dataColor": "red" },
+        { "label": "HUG Drive Speed", "data": "100 %", "dataColor": "white" },
+        { "label": "HUG Drive EEV", "data": "10%", "dataColor": "white" }
+      ]
+    },
+    {
+      "rectX": 480,
+      "rectY": 0,
+      "rectWidth": 200,
+      "rectHeight": 140, 
+      "fontSize": 16,
+      "textColor": "white",
+      "bgColor": "rgba(0, 0, 0, 0.4)",
+      "values": [
+        { "label": "Supple Air Temp Control", "data": "ENABLE","dataColor": "white" },
+        { "label": "Supple Air Temp", "data": "60 °C","dataColor": "white"  },
+        { "label": "Temp Cut In", "data": "40 °C","dataColor": "white"  },
+        { "label": "Temp Cut Out", "data": "50 °C","dataColor": "white"  },
+        { "label": "Function Command", "data": "Start","dataColor": "white"  }
+      ]
+    },
+    {
+      "rectX": 720,
+      "rectY": 0,
+      "rectWidth": 200,
+      "rectHeight": 140, 
+      "fontSize": 16,
+      "textColor": "white",
+      "bgColor": "rgba(0, 0, 0, 0.4)",
+      "values": [
+        { "label": "OR Temp Control", "data": "ENABLE","dataColor": "white" },
+        { "label": "OR Temp", "data": "60 °C","dataColor": "white"  },
+        { "label": "Temp Cut In", "data": "40 °C","dataColor": "white"  },
+        { "label": "Temp Cut Out", "data": "50 °C","dataColor": "white"  },
+        { "label": "Function Command", "data": "Stop","dataColor": "red"  }
+      ]
+    },
+    {
+      "rectX": 960,
+      "rectY": 0,
+      "rectWidth": 200,
+      "rectHeight": 110, 
+      "fontSize": 16,
+      "textColor": "white",
+      "bgColor": "rgba(0, 0, 0, 0.4)",
+      "values": [
+        { "label": "OR Humidity", "data": "0 %Rh","dataColor": "white" },
+        { "label": "Humidity Cut In", "data": "40 °C","dataColor": "white"  },
+        { "label": "Humidity Cut Out", "data": "50 °C","dataColor": "white"  },
+        { "label": "HGU Command", "data": "Start","dataColor": "white"  }
+      ]
+    },
+    {
+      "rectX": 1200,
+      "rectY": 0,
+      "rectWidth": 200,
+      "rectHeight": 110, 
+      "fontSize": 16,
+      "textColor": "white",
+      "bgColor": "rgba(0, 0, 0, 0.4)",
+      "values": [
+        { "label": "OR Humidity", "data": "0 %Rh","dataColor": "white" },
+        { "label": "OR Humidity setpoint", "data": "0 %Rh","dataColor": "white"  },
+        { "label": "OR Pressure dz  Show", "data": "0 %Rh","dataColor": "white"  },
+        { "label": "HGU Speed", "data": "100 %","dataColor": "white"  }
+      ]
+    },
+    {
+      "rectX": 550,
+      "rectY": 170,
+      "rectWidth": 200,
+      "rectHeight": 75, 
+      "fontSize": 16,
+      "textColor": "white",
+      "bgColor": "rgba(0, 0, 0, 0.4)",
+      "values": [
+        { "label": "Discharge Pressure", "data": "0 %Rh","dataColor": "white" },
+        { "label": "Discharge Set Temp", "data": "50 %Rh","dataColor": "white"  }
+      ]
+    },
+    {
+      "rectX": 550,
+      "rectY": 270,
+      "rectWidth": 200,
+      "rectHeight": 110, 
+      "fontSize": 16,
+      "textColor": "white",
+      "bgColor": "rgba(0, 0, 0, 0.4)",
+      "values": [
+        { "label": "Suction Pressure", "data": "0 Pal","dataColor": "white" },
+        { "label": "Suction Temp", "data": "50 °C","dataColor": "white"  },
+        { "label": "Suction Set Time", "data": "0 °C","dataColor": "white" },
+        { "label": "Superheat", "data": "50°C","dataColor": "white"  }
+      ]
+    },
+    {
+      "rectX": 950,
+      "rectY": 220,
+      "rectWidth": 200,
+      "rectHeight": 110, 
+      "fontSize": 16,
+      "textColor": "white",
+      "bgColor": "rgba(0, 0, 0, 0.4)",
+      "values": [
+        { "label": "Mode Control", "data": "Operate","dataColor": "white" },
+        { "label": "System Control", "data": "Start","dataColor": "white"  },
+        { "label": "System Alarm", "data": "Alarm","dataColor": "red" },
+        { "label": "Panel Switch", "data": "Alarm","dataColor": "red"  }
+      ]
+    },
+    {
+      "rectX": 550,
+      "rectY": 400,
+      "rectWidth": 200,
+      "rectHeight": 75, 
+      "fontSize": 16,
+      "textColor": "white",
+      "bgColor": "rgba(0, 0, 0, 0.4)",
+      "values": [
+        { "label": "Leave Coil Temp", "data": "0 °C","dataColor": "white" },
+        { "label": "Dewpoint", "data": "0 °C","dataColor": "white"  }
+      ]
+    },
+    {
+      "rectX": 900,
+      "rectY": 400,
+      "rectWidth": 200,
+      "rectHeight": 75, 
+      "fontSize": 16,
+      "textColor": "white",
+      "bgColor": "rgba(0, 0, 0, 0.4)",
+      "values": [
+        { "label": "Supply Temp", "data": "0 °C","dataColor": "white" },
+        { "label": "Supply Air Humidity", "data": "0.0 %Rh","dataColor": "white"  }
+      ]
+    },
+    {
+      "rectX": 1370,
+      "rectY": 300,
+      "rectWidth": 180,
+      "rectHeight": 90, 
+      "fontSize": 16,
+      "textColor": "white",
+      "bgColor": "rgba(0, 0, 0, 0.4)",
+      "values": [
+        { "label": "EXF Control", "data": "Start","dataColor": "white" },
+        { "label": "EXF Status", "data": "OFF","dataColor": "red"  },
+        { "label": "EXF Overload Alarm", "data": "Alarm","dataColor": "red"  }
+      ]
+    },
+    {
+      "rectX": 980,
+      "rectY": 550,
+      "rectWidth": 200,
+      "rectHeight": 50, 
+      "fontSize": 16,
+      "textColor": "white",
+      "bgColor": "rgba(0, 0, 0, 0.4)",
+      "values": [
+        { "label": "OR Helpa Filter Alarm", "data": "Alarm","dataColor": "red" }
+      ]
+    },
+    {
+      "rectX": 770,
+      "rectY": 760,
+      "rectWidth": 220,
+      "rectHeight": 150, 
+      "fontSize": 16,
+      "textColor": "white",
+      "bgColor": "rgba(0, 0, 0, 0.4)",
+      "values": [
+        { "label": "OR Pressure", "data": "0.0 Pa","dataColor": "red" },
+        { "label": "OR Pressure Set Point", "data": "5.0 Pa","dataColor": "red" },
+        { "label": "OR Temperature", "data": "0.0 °C","dataColor": "red" },
+        { "label": "OR Temp Set Point", "data": "0.0 °C","dataColor": "red" },
+        { "label": "OR Humidity", "data": "0.0 %Rh","dataColor": "red" },
+        { "label": "OR Humidity Set Point", "data": "0.0 %Rh","dataColor": "red" }
+      ]
+    },
+    {
+      "rectX": 380,
+      "rectY": 660,
+      "rectWidth": 220,
+      "rectHeight": 170, 
+      "fontSize": 16,
+      "textColor": "white",
+      "bgColor": "rgba(0, 0, 0, 0.4)",
+      "values": [
+        { "label": "AHU EC Fan Control", "data": "Start","dataColor": "red" },
+        { "label": "AHU EC Fan Status", "data": "On","dataColor": "red" },
+        { "label": "AHU EC Fan Alarm", "data": "Alarm","dataColor": "red" },
+        { "label": "Air Flow", "data": "0 CMH","dataColor": "red" },
+        { "label": "Air Flow Set Point", "data": "1000 CMH","dataColor": "red" },
+        { "label": "Air Flow dz Show", "data": "0 CMH","dataColor": "red" },
+        { "label": "Air Flow Fan Speed", "data": "100 %","dataColor": "red" }
+      ]
+    },
+    {
+      "rectX": 50,
+      "rectY": 620,
+      "rectWidth": 200,
+      "rectHeight": 100, 
+      "fontSize": 14,
+      "textColor": "white",
+      "bgColor": "rgba(0, 0, 0, 0.4)",
+      "values": [
+        { "label": "OR EC Fan Control", "data": "0.0 Pa","dataColor": "white" },
+        { "label": "Pressure Set Point", "data": "5.0 Pa","dataColor": "white" },
+        { "label": "OR Pressure dz Show", "data": "0.0 Pa","dataColor": "white" },
+        { "label": "RA Damper Position", "data": "0 %","dataColor": "white" }
+      ]
+    },
+    {
+      "rectX": 50,
+      "rectY": 430,
+      "rectWidth": 200,
+      "rectHeight": 50, 
+      "fontSize": 14,
+      "textColor": "white",
+      "bgColor": "rgba(0, 0, 0, 0.4)",
+      "values": [
+        { "label": "AHU PRE-MED Filter Alarm", "data": "None","dataColor": "red" }
+
+      ]
+    },
+    {
+      "rectX": 50,
+      "rectY": 300,
+      "rectWidth": 200,
+      "rectHeight": 100, 
+      "fontSize": 14,
+      "textColor": "white",
+      "bgColor": "rgba(0, 0, 0, 0.4)",
+      "values": [
+        { "label": "CDU Control", "data": "Start","dataColor": "white" },
+        { "label": "CDU Status", "data": "On","dataColor": "white" },
+        { "label": "CDU Alarm", "data": "Alarm","dataColor": "red" },
+        { "label": "CDU Temp Set", "data": "0 °C","dataColor": "white" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "lines": [
+
+    {
+      "area": "HUG Control",
+      "x1": 283,
+      "y1": 192,
+      "x2": 283,
+      "y2": 110,
+      "stroke": "red",
+      "strokeWidth": 3,
+      "strokeDasharray": ""
+    },
+    {
+      "area": "Supple Air Temp Control",
+      "x1": 440,
+      "y1": 40,
+      "x2": 480,
+      "y2": 40,
+      "stroke": "red",
+      "strokeWidth": 3,
+      "strokeDasharray": ""
+    },
+    {
+      "area": "OR Temp Control",
+      "x1": 680,
+      "y1": 40,
+      "x2": 720,
+      "y2": 40,
+      "stroke": "red",
+      "strokeWidth": 3,
+      "strokeDasharray": ""
+    },
+    {
+      "area": "OR Humidity",
+      "x1": 920,
+      "y1": 40,
+      "x2": 960,
+      "y2": 40,
+      "stroke": "red",
+      "strokeWidth": 3,
+      "strokeDasharray": ""
+    },
+    {
+      "area": "OR Humidity",
+      "x1": 1160,
+      "y1": 40,
+      "x2": 1200,
+      "y2": 40,
+      "stroke": "red",
+      "strokeWidth": 3,
+      "strokeDasharray": ""
+    },
+    {
+      "area": "Dischange Pressure",
+      "x1": 440,
+      "y1": 190,
+      "x2": 550,
+      "y2": 190,
+      "stroke": "green",
+      "strokeWidth": 3,
+      "strokeDasharray": ""
+    },
+    {
+      "area": "Suction Pressure 1",
+      "x1": 413,
+      "y1": 300,
+      "x2": 413,
+      "y2": 235,
+      "stroke": "green",
+      "strokeWidth": 3,
+      "strokeDasharray": ""
+    },
+    {
+      "area": "Suction Pressure 2",
+      "x1": 550,
+      "y1": 300,
+      "x2": 412,
+      "y2": 300,
+      "stroke": "green",
+      "strokeWidth": 3,
+      "strokeDasharray": ""
+    },
+    {
+      "area": "Leave Coil Temp 1",
+      "x1": 550,
+      "y1": 420,
+      "x2": 439,
+      "y2": 420,
+      "stroke": "green",
+      "strokeWidth": 3,
+      "strokeDasharray": ""
+    },
+    {
+      "area": "Leave Coil Temp 2",
+      "x1": 440,
+      "y1": 420,
+      "x2": 440,
+      "y2": 540,
+      "stroke": "green",
+      "strokeWidth": 3,
+      "strokeDasharray": ""
+    },
+    {
+      "area": "Supply Temp 1",
+      "x1": 900,
+      "y1": 420,
+      "x2": 795,
+      "y2": 420,
+      "stroke": "green",
+      "strokeWidth": 3,
+      "strokeDasharray": ""
+    },
+    {
+      "area": "Supply Temp 2",
+      "x1": 796,
+      "y1": 420,
+      "x2": 796,
+      "y2": 538,
+      "stroke": "green",
+      "strokeWidth": 3,
+      "strokeDasharray": ""
+    },
+    {
+      "area": "Exf Control",
+      "x1": 1460,
+      "y1": 390,
+      "x2": 1460,
+      "y2": 515,
+      "stroke": "red",
+      "strokeWidth": 3,
+      "strokeDasharray": ""
+    },
+    {
+      "area":"OR Helper Filter Alarm 1",
+      "x1": 935,
+      "y1": 580,
+      "x2": 935,
+      "y2": 684,
+      "stroke": "red",
+      "strokeWidth": 3,
+      "strokeDasharray": ""
+    },
+    {
+      "area":"OR Helper Filter Alarm 2",
+      "x1": 935,
+      "y1": 580,
+      "x2": 980,
+      "y2": 580,
+      "stroke": "red",
+      "strokeWidth": 3,
+      "strokeDasharray": ""
+    },
+    {
+      "area":"AHU EC Fan Control",
+      "x1": 546,
+      "y1": 540,
+      "x2": 546,
+      "y2": 660,
+      "stroke": "green",
+      "strokeWidth": 3,
+      "strokeDasharray": ""
+    },
+    {
+      "area":"OR EC Fan Control",
+      "x1": 250,
+      "y1": 645,
+      "x2": 295,
+      "y2": 645,
+      "stroke": "green",
+      "strokeWidth": 3,
+      "strokeDasharray": ""
+    },
+    {
+      "area": "AHU PRE-MED Filter Alarm 1",
+      "x1": 250,
+      "y1": 455,
+      "x2": 325,
+      "y2": 455,
+      "stroke": "green",
+      "strokeWidth": 3,
+      "strokeDasharray": ""
+    },
+    {
+      "area": "AHU PRE-MED Filter Alarm 2",
+      "x1": 325,
+      "y1": 454,
+      "x2": 325,
+      "y2": 540,
+      "stroke": "green",
+      "strokeWidth": 3,
+      "strokeDasharray": ""
+    },
+    {
+      "area": "CDO Control",
+      "x1": 250,
+      "y1": 325,
+      "x2": 280,
+      "y2": 325,
+      "stroke": "green",
+      "strokeWidth": 3,
+      "strokeDasharray": ""
+    }
+  ]
+}

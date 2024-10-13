@@ -1,0 +1,92 @@
+name: Deploy to Cloud Run
+
+on:
+  push:
+    branches:
+      - develop  # or whatever branch you want to trigger deployment on
+
+permissions:
+  id-token: write # This is required for requesting the JWT
+  contents: read  # This is required for actions/checkout
+
+env:
+  IMAGE_NAME: 'asia-southeast1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/${{ vars.APP_NAME }}/${{ github.ref_name }}:${{ github.sha }}'  
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20.17.0'
+    
+    - name: Create .env file
+      if: github.ref_name == 'develop'
+      run: |
+        echo "Image Name: ${{ env.IMAGE_NAME }}"
+        echo "NEXT_PUBLIC_API_URL=${{ vars.NEXT_PUBLIC_API_URL }}" >> .env
+
+    # - name: Install dependencies
+    #   run: npm install --ignore-scripts
+
+    # unit test
+    
+    # - name: Build the application
+    #   run: npm run build
+
+    - id: 'auth'
+      name: Authenticate with GCP
+      uses: google-github-actions/auth@v1
+      with:
+        create_credentials_file: 'true'
+        # token_format: 'access_token'
+        # credentials_json: ${{ vars.GCP_SA_KEY }}  # Add your GCP service account key as a secret
+        workload_identity_provider: ${{ secrets.GCP_WORKLOAD }} 	
+        service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }}
+
+    # - id: 'gcloud'
+    #   name: 'gcloud'
+    #   run: |-
+    #     gcloud auth login --brief --cred-file="${{ steps.auth.outputs.credentials_file_path }}"
+
+    - name: Set up Cloud SDK
+      uses: google-github-actions/setup-gcloud@v2
+
+    - name: set credentials file
+      run: >-
+        gcloud auth login --cred-file=${{steps.auth.outputs.credentials_file_path}}
+    - name: Use gcloud CLI
+      run: gcloud info
+
+    - name: Set up Docker for Google Container Registry
+      run: |
+        gcloud auth configure-docker asia-southeast1-docker.pkg.dev
+
+    - name: Build Docker image
+      run: |
+        docker build -t ${{ env.IMAGE_NAME }} .
+
+    - name: Push Docker image to Google Container Registry
+      run: |
+        docker push ${{ env.IMAGE_NAME }}
+
+
+
+      
+    # - name: Build and push Docker image to Container Registry
+    #   run: |
+    #     gcloud builds submit --region=${{ vars.GCP_REGION }} --tag ${{ env.IMAGE_NAME }}
+
+    - name: Deploy to Cloud Run
+      run: |
+        gcloud run deploy ${{ vars.APP_NAME }}-${{ github.ref_name }} \
+          --port ${{ vars.PORT }} \
+          --image ${{ env.IMAGE_NAME }} \
+          --platform managed \
+          --region ${{ secrets.GCP_REGION }} \
+          --memory 128Mi \
+          --allow-unauthenticated
